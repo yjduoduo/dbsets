@@ -5,14 +5,18 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += network
 
 TARGET = DBS
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        dbsserver.cpp
+        dbsserver.cpp \
+    version.c
 
-HEADERS  += dbsserver.h
+HEADERS  += dbsserver.h \
+    version.h \
+    stdcommon.h
 
 FORMS    += dbsserver.ui
